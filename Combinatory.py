@@ -35,3 +35,21 @@ def nC(n,k):
 # размещения с повтором
 def nA(n,k):
     return n**k
+
+# сокращение дробей
+def ReduceFraction(n, m):
+    if n > m:
+        k = n
+    else:
+        k = m
+    while k != 1:
+        if n % k == 0 and m % k == 0:
+            return n // k, m // k
+        else:
+            k -= 1
+    return n, m
+
+# вывод сокращенной дроби
+def wRF(n,m):
+    a = ReduceFraction(n,m)
+    print(a[0] , "/" , a[1])
