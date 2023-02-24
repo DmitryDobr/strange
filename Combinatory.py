@@ -10,12 +10,12 @@ def P(n):
     return factorial(n)
 
 # сочетания без повтора
-def C(n,k):
-    return (factorial(n)) / (factorial(k) * factorial(n-k))
+def C(n, k):
+    return (factorial(n)) / (factorial(k) * factorial(n - k))
     
 # размещения без повтора
-def A(n,k):
-    return (factorial(n) / (factorial(n-k)))
+def A(n, k):
+    return (factorial(n) / (factorial(n - k)))
     
     
 # перестановки с повтором
@@ -29,11 +29,11 @@ def nP(nList = []):
     return factorial(summ) / factmn
     
 # cочетания с повтором
-def nC(n,k):
-    return C(n+k-1,k)
+def nC(n, k):
+    return C(n+k-1, k)
 
 # размещения с повтором
-def nA(n,k):
+def nA(n, k):
     return n**k
 
 # сокращение дробей
@@ -50,6 +50,6 @@ def ReduceFraction(n, m):
     return n, m
 
 # вывод сокращенной дроби
-def wRF(n,m):
-    a = ReduceFraction(n,m)
+def wRF(n, m):
+    a = ReduceFraction(n, m)
     print(a[0] , "/" , a[1])
