@@ -1,2 +1,2 @@
 # strange
-just some strange programs
+Просто свлка странных скриптов на Питоне
